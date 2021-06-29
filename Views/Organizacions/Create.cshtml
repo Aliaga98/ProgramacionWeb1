@@ -1,0 +1,75 @@
+﻿@model Login_Proyecto.Models.Organizacion
+
+@{
+    ViewData["Title"] = "Create";
+}
+<link rel="stylesheet" href="~/css/Login.css" type="text/css" media="all" />
+
+
+<body style="background-color:raqua'">
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <form asp-action="Create">
+
+                    <span class="login100-form-title p-b-34 p-t-27">
+                        INGRESE LOS DATOS DE SU ORGANIZACIÓN
+                    </span>
+                    <br /> <br />
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Nombre" class="control-label"></label>
+                        <input asp-for="Nombre" class="form-control" />
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Usuario" class="control-label"></label>
+                        <input asp-for="Usuario" class="form-control" />
+                        <span asp-validation-for="Usuario" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Clave" class="control-label"></label>
+                        <input asp-for="Clave" class="form-control" />
+                        <span asp-validation-for="Clave" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Rol" class="control-label"></label>
+                        <input asp-for="Rol" class="form-control" />
+                        <span asp-validation-for="Rol" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Telefono" class="control-label"></label>
+                        <input asp-for="Telefono" class="form-control" />
+                        <span asp-validation-for="Telefono" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Descripcion" class="control-label"></label>
+                        <input asp-for="Descripcion" class="form-control" />
+                        <span asp-validation-for="Descripcion" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Socios" class="control-label"></label>
+                        <input asp-for="Socios" class="form-control" />
+                        <span asp-validation-for="Socios" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Departamento" class="control-label"></label>
+                        <input asp-for="Departamento" class="form-control" />
+                        <span asp-validation-for="Departamento" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Sede" class="control-label"></label>
+                        <input asp-for="Sede" class="form-control" />
+                        <span asp-validation-for="Sede" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <a asp-area="" asp-controller="Voluntarios" asp-action="Login">Cancelar</a>
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

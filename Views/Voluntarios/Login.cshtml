@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<link rel="stylesheet" href="~/css/Login.css" type="text/css" media="all" />
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <form class="login100-form validate-form">
+
+                <span class="login100-form-title p-b-34 p-t-27">
+                    Iniciar sesión
+                </span>
+
+                <div data-validate="Enter username">
+                    <input class="input100" type="text" name="username" placeholder="Username">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div data-validate="Enter password">
+                    <input class="input100" type="password" name="pass" placeholder="Password">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn">
+                        Ingresar
+                    </button>
+                </div>
+                <div class="text-center p-t-90">
+                    <a asp-area="" asp-controller="Home" asp-action="Registro">Olvido su contraseña</a>
+                </div>
+                <div class="text-center p-t-90">
+                    <a asp-area="" asp-controller="Home" asp-action="Registro">Registrate</a>
+                </div>
+            </form>
+        </div> 
+    </div>
+</div>
+
